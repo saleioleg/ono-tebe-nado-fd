@@ -1,1 +1,182 @@
-/* место для вашего кода */
+
+/* ШАПКА */
+
+.header {
+  display: grid;
+  padding: 92px 50px 96px;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+}
+
+.header-menu .header-menu-item:first-child {
+  list-style-type: none;
+}
+
+.header-menu-link-active {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.header-menu-link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.header-logo {
+  display: block;
+  min-width: 148px;
+  min-height: 105px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  align-items: flex-start;
+  max-width: 240px;
+  font-style: unset;
+}
+
+.header-address-link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+/* ОБЛОЖКА */
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 757px;
+  padding: 165px 50px 50px;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+.cover-title {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  color: #FFFFFF;
+}
+
+.aligned-text-left {
+  text-align: start;
+}
+
+.aligned-text-center {
+  text-align: center;
+}
+
+.aligned-text-right {
+  text-align: end;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: 400;
+  font-size: 22px;
+  word-spacing: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.bet-button {
+  margin: 0;
+  padding: 12px 32px 11px 31px;
+  appearance: none;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+/* ЛОТЫ */
+
+.lots {
+  padding: 180px 24px 120px;
+}
+
+.lots-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.lots-list {
+  width: 334px;
+  min-height: 596px;
+  list-style: none;
+}
+
+.lots-more-link {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.card-link, .card {
+  height: 100%;
+}
+
+.card-type-picture {
+  background-image: url('../images/card-lot-01.jpg');
+  background-size: cover;
+}
+
+.card-type-book {
+  background-image: url('../images/card-lot-02.jpg');
+  background-size: cover;
+}
+
+.card-type-picture {
+  background-image: url('../images/card-lot-03.jpg');
+  background-size: cover;
+}
+
+/* ОБ АУКЦИОНЕ */
+
+
+
+/* ПОДВАЛ */
