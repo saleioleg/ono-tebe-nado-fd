@@ -190,22 +190,24 @@
   color: #FFFFFF;
 }
 
-.card-type-film {
-  background-image: url('../images/card-lot-01.jpg');
+.card-type-film,
+.card-type-book,
+.card-rype-picture {
   background-size: cover;
   background-position: center;
+}
+
+.card-type-film {
+  background-image: url('../images/card-lot-01.jpg');
+  
 }
 
 .card-type-book {
   background-image: url('../images/card-lot-02.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 .card-type-picture {
   background-image: url('../images/card-lot-03.jpg');
-  background-size: cover;
-  background-image: center;
 }
 
 .lots-look-more-link {
