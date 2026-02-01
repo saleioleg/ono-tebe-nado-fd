@@ -1,21 +1,24 @@
-
 /* ШАПКА */
 
 .header {
   display: grid;
-  padding: 92px 50px 96px;
+  padding: 91px 50px 92px;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
 }
 
 .header-menu {
   display: flex;
-  gap: 32px;
+  gap: 33px;
   list-style: circle;
 }
 
+.header-menu-item {
+  padding-bottom: 2px;
+}
+
 .header-menu .header-menu-item:first-child {
-  list-style-type: none;
+  list-style: none;
 }
 
 .header-menu-link-active {
@@ -35,8 +38,7 @@
 
 .header-logo {
   display: block;
-  min-width: 148px;
-  min-height: 105px;
+  min-width: 137px;
 }
 
 .address {
@@ -46,14 +48,19 @@
   align-items: flex-start;
   max-width: 240px;
   font-style: unset;
+  font-size: 18px;
+  line-height: 24.3px;
 }
 
 .header-address-link {
   text-decoration: none;
   border-bottom: 1px solid black;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
+}
+
+.header-address-text {
+  padding-left: 1px;
+  padding-bottom: 2px;
 }
 
 /* ОБЛОЖКА */
@@ -67,7 +74,6 @@
   padding: 165px 50px 50px;
   background-image: url("../images/cover.jpg");
   background-size: cover;
-  z-index: 1;
 }
 
 .overlay {
@@ -88,7 +94,7 @@
   display: block;
   font-size: 100px;
   letter-spacing: 0.3em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .aligned-text-left {
@@ -114,17 +120,17 @@
   position: relative;
   font-weight: 400;
   font-size: 22px;
-  word-spacing: 20px;
+  word-spacing: 19px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .bet-button {
   margin: 0;
   padding: 12px 32px 11px 31px;
   appearance: none;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   background-color: transparent;
   cursor: pointer;
   font-weight: 500;
@@ -159,7 +165,8 @@
   min-height: 596px;
 }
 
-.card-link, .card {
+.card-link,
+.card {
   height: 100%;
   text-decoration: none;
 }
@@ -178,7 +185,7 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -187,7 +194,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-type-film,
@@ -198,19 +205,19 @@
 }
 
 .card-type-film {
-  background-image: url('../images/card-lot-01.jpg');
-  
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card-type-book {
-  background-image: url('../images/card-lot-02.jpg');
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .card-type-picture {
-  background-image: url('../images/card-lot-03.jpg');
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .lots-look-more-link {
+  margin-left: 40px;
   text-decoration: none;
   border-bottom: 1px solid #000;
   font-weight: 400;
@@ -222,8 +229,8 @@
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  gap: 36px;
-  padding: 0 24px 180px;
+  gap: 25px;
+  padding: 34px 24px 180px;
 }
 
 .about-logo {
@@ -243,8 +250,8 @@
 }
 
 .about-title {
-  margin-top: 136px;
-  margin-bottom: 100px;
+  padding-top: 101px;
+  padding-bottom: 100px;
   color: #000;
   font-weight: 700;
   font-size: 40px;
@@ -263,6 +270,14 @@
   line-height: 24px;
 }
 
+.auction-concept {
+  max-width: 688px;
+}
+
+.lot-significance {
+  max-width: 693px;
+}
+
 /* ПОДВАЛ */
 
 .footer {
@@ -279,7 +294,8 @@
   line-height: 100%;
 }
 
-.footer-menu-list, .footer-social-list {
+.footer-menu-list,
+.footer-social-list {
   list-style: none;
 }
 
