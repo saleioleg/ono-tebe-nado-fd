@@ -87,6 +87,7 @@
 
 .cover-title {
   position: relative;
+  margin-right: -30px;
   text-transform: uppercase;
 }
 
@@ -103,14 +104,11 @@
 
 .aligned-text-center {
   text-align: center;
+  padding: 18px 0;
 }
 
 .aligned-text-right {
   text-align: end;
-}
-
-.no-letter-spacing {
-  letter-spacing: 0;
 }
 
 .cover-description {
@@ -286,12 +284,27 @@
   padding: 0 50px 82px;
 }
 
+.address-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 265px;
+  font-style: unset;
+  font-size: 18px;
+  line-height: 24.3px;
+}
+
 .footer-address-link {
+  padding-top: 5px;
   text-decoration: none;
   border-bottom: 1px solid black;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
+}
+
+.footer-address-text {
+  padding-top: 2px;
 }
 
 .footer-menu-list,
@@ -303,6 +316,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 24px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .footer-menu-link-active {
@@ -321,6 +337,7 @@
 }
 
 .footer-social-list-item {
+  padding-top: 1px;
   width: 48px;
   height: 48px;
 }
