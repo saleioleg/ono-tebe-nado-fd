@@ -1,1 +1,1 @@
-https://github.com/saleioleg/ono-tebe-nado-fd#
+https://github.com/saleioleg/ono-tebe-nado-fd
