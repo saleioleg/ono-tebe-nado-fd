@@ -74,6 +74,7 @@
   padding: 165px 50px 50px;
   background-image: url("../images/cover.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .overlay {
@@ -153,12 +154,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-grow: 1;
   gap: 25px;
   margin-bottom: 30px;
   list-style: none;
 }
 
 .lots-card-list-item {
+  flex-grow: 1;
   width: 334px;
   min-height: 596px;
 }
@@ -212,6 +215,13 @@
 
 .card-type-picture {
   background-image: url("../images/card-lot-03.jpg");
+}
+
+.card-type-film,
+.card-type-book,
+.card-type-picture {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .lots-look-more-link {
