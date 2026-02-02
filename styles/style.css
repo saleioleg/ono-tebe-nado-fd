@@ -21,19 +21,16 @@
   list-style: none;
 }
 
-.header-menu-link-active {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-}
-
 .header-menu-link {
   text-decoration: none;
   border-bottom: 1px solid black;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
+}
+
+.header-menu-link-active {
+  border: none;
 }
 
 .header-logo {
@@ -46,19 +43,22 @@
   flex-direction: column;
   justify-self: end;
   align-items: flex-start;
-  max-width: 240px;
   font-style: unset;
   font-size: 18px;
   line-height: 24.3px;
 }
 
-.header-address-link {
+.address-block-header {
+  max-width: 240px;
+}
+
+.address-block-link {
   text-decoration: none;
   border-bottom: 1px solid black;
   font-weight: 400;
 }
 
-.header-address-text {
+.address-block-text {
   padding-left: 1px;
   padding-bottom: 2px;
 }
@@ -73,14 +73,14 @@
   min-height: 757px;
   padding: 165px 50px 50px;
   background-image: url("../images/cover.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(0 0 0 / 0.6);
@@ -132,6 +132,7 @@
   border: 1px solid #ffffff;
   background-color: transparent;
   cursor: pointer;
+  text-transform: uppercase;
   font-weight: 500;
   font-size: 22px;
 }
@@ -198,11 +199,10 @@
   color: #ffffff;
 }
 
-.card-type-film,
-.card-type-book,
-.card-rype-picture {
+.card-background {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card-type-film {
@@ -215,13 +215,6 @@
 
 .card-type-picture {
   background-image: url("../images/card-lot-03.jpg");
-}
-
-.card-type-film,
-.card-type-book,
-.card-type-picture {
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .lots-look-more-link {
@@ -294,14 +287,8 @@
   padding: 0 50px 82px;
 }
 
-.address-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.address-block-footer {
   max-width: 265px;
-  font-style: unset;
-  font-size: 18px;
-  line-height: 24.3px;
 }
 
 .footer-address-link {
@@ -331,13 +318,13 @@
   line-height: 22px;
 }
 
-.footer-menu-link-active {
-  text-decoration: none;
-}
-
 .footer-menu-link {
   text-decoration: none;
   border-bottom: 1px solid #000;
+}
+
+.footer-menu-link-active {
+  border: none;
 }
 
 .footer-social-list {
